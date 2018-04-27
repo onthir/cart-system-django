@@ -1,0 +1,6 @@
+{% for p in pr %}
+
+<h1>{{ p.name }}</h1>
+<a href="{% url 'add_to_cart' p.slug %}">Add To Cart</a>
+<a href="{% url 'single_delete' p.id %}">Remove From Cart</a>
+{% endfor %}
